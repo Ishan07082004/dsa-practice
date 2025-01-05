@@ -10,5 +10,9 @@ int main() {
   m["boxer"] = 7;
   cout << m["boxer"] << endl;
 
+  for (auto x : m) {
+    cout << x.first << " " << x.second << "\n";
+  }
+
   return 0;
 }
