@@ -11,7 +11,6 @@ int getLongestSubarray(vector<int> &v, int k){
   for(int i=0; i<n; i++){
     // calculate the prefixSum till index i:
     sum += v[i];
-
     // if sum is equal to k, update the maxLen
     if(sum == k){
       maxLen = max(maxLen, i+1);
